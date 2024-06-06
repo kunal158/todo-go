@@ -7,7 +7,6 @@ import (
 	"os"
 
 	"github.com/gofiber/fiber/v2"
-	"github.com/gofiber/fiber/v2/middleware/cors"
 	"github.com/joho/godotenv"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/bson/primitive"
@@ -61,8 +60,6 @@ func main() {
 
 	// Initialize Fiber
 	app := fiber.New()
-
-	app.Use(cors.New())
 
 	app.Get("/api/todos", getTodos)
 	app.Post("/api/todos", createTodo)

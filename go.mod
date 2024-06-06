@@ -3,6 +3,7 @@ module github.com/kunal158/todo-go
 go 1.22.3
 
 require (
+    github.com/air-verse/air v1.52.2
 	github.com/andybalholm/brotli v1.0.5 // indirect
 	github.com/gofiber/fiber/v2 v2.52.4 // indirect
 	github.com/golang/snappy v0.0.1 // indirect
