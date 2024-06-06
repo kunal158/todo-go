@@ -75,6 +75,7 @@ func main() {
 	}
 
 	if os.Getenv("ENV") == "production" {
+		fmt.Println("Serving static files from ./client/dist")
 		app.Static("/", "./client/dist")
 	}
 
